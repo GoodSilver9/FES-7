@@ -1,0 +1,22 @@
+.myex {
+  color: slateblue;
+}
+#name {
+  text-decoration: underline;
+}
+.myex + p {
+  color: red;
+}
+
+/* .sct2 strong {
+  background-color: yellow;
+} */
+
+.sct2 > strong {
+  background-color: yellow;
+}
+
+.my + p,
+.sct3 p {
+  background-color: beige;
+}
