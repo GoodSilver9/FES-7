@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "sm";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/HANAMDAUM.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "practice";
+  src: url("./font/Pretendard-Bold.woff") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  color: rgb(78, 145, 145);
+  font-family: "Noto Sans KR", sans-serif;
+}
+strong {
+  border: 1px solid currentColor;
+}
+
+h2 {
+  color: royalblue;
+  font-family: "practice";
+  font-weight: normal;
+}
+p {
+  font-size: 4rem;
+}
