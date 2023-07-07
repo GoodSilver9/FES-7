@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 꾸미기</title>
+    <style>
+        div {
+            width: 80px;
+            height: 35px;
+            background-color: aqua;
+            margin: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #eee;
+            font-weight: bold;
+        }
+
+        .box1 {
+            background-color: #343F50;
+            border-left: solid 1px #4A5568;
+            border-top: solid 1px #4A5568;
+            box-shadow: #000 0px 0px 0px 1px;
+
+        }
+
+        .box2 {
+            background-color: #343F50;
+            border-left: solid 4px #4A5568;
+            border-top: solid 4px #4A5568;
+            box-shadow: #000 0px 0px 0px 3px;
+        }
+
+        .box3 {
+            background: linear-gradient(90deg, rgb(139, 76, 245) 0%, rgb(54, 108, 242) 100%);
+            border-radius: 20px;
+            /* rgb(139,76,245) */
+            /* rgb(54,108,242) */
+
+        }
+
+        .box4 {
+            border: 1px solid #eee;
+            background-color: #fff;
+            color: rgb(41, 54, 61);
+            border-radius: 0px 25px 25px 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">Hello🦁</div>
+    <div class="box2"></div>
+    <div class="box3">Hello🦁</div>
+    <div class="box4">Hello🦁</div>
+</body>
+
+</html>

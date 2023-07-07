@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS선택자 우선순위</title>
+    <style>
+        div #id {
+            color: green;
+        }
+
+        p {
+            color: black;
+        }
+
+        #id {
+            color: blue;
+        }
+
+        .class {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p class="c1" id="id">어떤 색일까요?</p>
+        <p class="c1" id="id" style="color:red">어떤 색일까요?</p>
+
+    </div>
+</body>
+
+</html>
