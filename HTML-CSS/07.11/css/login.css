@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+  width: 350px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+.welcome {
+  margin-left: 16px;
+  margin-bottom: 0px;
+  margin-top: 19px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15.02px;
+  font-family: "SpoqaHanSansNeo-Regular";
+}
+
+.log_in_box {
+  width: 318px;
+  height: 40px;
+  background-color: #711bff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  color: #fff;
+  box-sizing: border-box;
+  margin-left: 16px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15.02px;
+  font-family: "SpoqaHanSansNeo-Regular";
+}
+.log_in_box img {
+  width: 64px;
+  height: 18px;
+  padding-right: 4px;
+}
+.account {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15.02px;
+  margin-left: 16px;
+  margin-right: 16px;
+  font-family: "SpoqaHanSansNeo-Regular";
+}
+
+.account_id {
+  display: flex;
+  box-sizing: border-box;
+  border-right: 1px solid gray;
+  padding-right: 4px;
+  gap: 4px;
+}
+.id_password {
+  display: flex;
+  padding-left: 4px;
+}
+.account_password {
+  padding-left: 4px;
+}
+.id_password div {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15.02px;
+  font-family: "SpoqaHanSansNeo-Regular";
+}
+.account img {
+  width: 16px;
+  height: 16px;
+}
+
+.new_account {
+  display: flex;
+  gap: 4px;
+}
