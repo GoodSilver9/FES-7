@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        div {
+            display: flex;
+            align-items: center;
+        }
+
+        p {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            flex-basis: 0;
+        }
+
+        .item1 {
+            flex-grow: 0;
+            order: 10
+        }
+
+        .item2 {
+            flex-grow: 1;
+            background-color: aliceblue;
+        }
+
+        .item3 {
+            flex-grow: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p class="item1">안녕하세요 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta nam at voluptate
+            sapiente, repellat sit
+            porro sunt, unde reiciendis aut illo iure! Vitae voluptatibus ratione minima eius iusto laboriosam pariatur.
+        </p>
+        <p class="item2">반갑습니다 <br>😀</p>
+        <p class="item3">7기 여러분</p>
+    </div>
+
+</body>
+
+</html>

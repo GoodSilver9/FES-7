@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .container {
+            display: flex;
+            width: 457px;
+            height: 48px;
+            align-items: center;
+            gap: 24px;
+        }
+
+        button {
+            background-color: #343F50;
+            color: #fff;
+            padding: 9px 25px 9px 25px;
+            border: 1px solid gray;
+            transition: all 0.3s;
+
+        }
+
+        .hover button {
+            background-color: #EB5757;
+        }
+
+        .hover button:hover {
+            text-decoration: underline;
+            background-color: #439AFF;
+        }
+
+        .active button {
+            background-color: #EB5757;
+        }
+
+        .active button:active {
+            text-decoration: underline;
+            background-color: #439AFF;
+        }
+
+        .disabled button {
+            color: #4A5568;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container default">
+        default
+        <button>Button</button>
+        <button>Yes</button>
+        <button>Del</button>
+    </div>
+    <div class="container hover">
+        hover
+        <button>Button</button>
+        <button>Yes</button>
+        <button>Del</button>
+    </div>
+    <div class="container active">
+        active
+        <button>Button</button>
+        <button>Yes</button>
+        <button>Del</button>
+    </div>
+    <div class="container disabled">
+        disabled
+        <button>Button</button>
+    </div>
+
+</body>
+
+</html>
