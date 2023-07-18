@@ -1,0 +1,32 @@
+h1,
+p {
+  margin: 0;
+}
+
+body {
+  background: url(./images/bg.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+.animal {
+  margin-bottom: -5px;
+}
+.description {
+  padding: 20px;
+  width: inherit;
+  color: #fff;
+  border-bottom: 10px solid #46260e;
+  border-radius: 0px 0px 35px 35px;
+  box-shadow: 0 0 0 0.3;
+  box-sizing: border-box;
+  background-color: #9c6035;
+}
