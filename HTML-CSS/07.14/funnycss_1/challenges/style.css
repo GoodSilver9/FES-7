@@ -8,6 +8,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 .container {
   display: flex;
@@ -21,7 +22,6 @@ body {
   margin-bottom: -5px;
 }
 .description {
-  padding: 20px;
   width: inherit;
   color: #fff;
   border-bottom: 10px solid #46260e;
@@ -29,4 +29,6 @@ body {
   box-shadow: 0 0 0 0.3;
   box-sizing: border-box;
   background-color: #9c6035;
+  padding: 20px;
+  padding-bottom: 40px;
 }
