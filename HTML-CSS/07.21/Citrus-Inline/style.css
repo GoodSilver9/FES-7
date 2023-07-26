@@ -1,0 +1,46 @@
+.wrapper {
+  box-shadow: inset 0 0 20px red;
+  width: 800px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.fruit {
+  background-color: orange;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  border-radius: 50%;
+}
+
+.fruit.silver {
+  background-color: antiquewhite;
+}
+.fruit.gold {
+  background-color: orange;
+}
+.fruit.bronze {
+  background-color: orangered;
+}
+
+.fruit:nth-child(1) {
+  background-color: lemonchiffon;
+}
+.fruit:nth-child(2) {
+  background-color: orange;
+}
+.fruit:nth-child(3) {
+  background-color: orangered;
+}
+
+/* .wrapper a.silver {
+  background-color: silver;
+}
+
+.wrapper a.gold {
+  background-color: gold;
+}
+.wrapper a.bronze {
+  background-color: burlywood;
+} */
