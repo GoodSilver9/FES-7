@@ -1,0 +1,149 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
+
+* {
+  font-family: "Spoqa Han Sans Neo";
+  box-sizing: border-box;
+}
+body,
+h1,
+p,
+ul,
+li,
+input,
+label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c4c4c4;
+}
+h1 {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  height: 736px;
+}
+
+.header_title {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  padding-left: 188px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 1px solid #c4c4c4;
+  margin-bottom: 26px;
+}
+.header_title::after {
+  content: "X";
+  margin-left: auto;
+  width: 16px;
+  height: 16px;
+}
+
+.login_box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0px 24px;
+}
+.user_name,
+.user_password {
+  border: 1px solid #c4c4c4;
+  width: 472px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.login_check_box {
+  display: flex;
+  margin-top: 12px;
+  gap: 8px;
+}
+.login_continue {
+  width: 22px;
+  height: 22px;
+  border-radius: 10px;
+}
+.login_box_title {
+}
+.login_button {
+  padding: 14px 211px;
+  margin: 20px 24px;
+  background-color: #2f80ed;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+.account {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #767676;
+}
+.account_add {
+}
+.account_add::after {
+  content: "|";
+  margin: 0px 12px;
+}
+.other_account_login {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.other_login_text {
+  display: flex;
+  justify-content: center;
+  width: 472px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #767676;
+}
+
+.other_login_text::after {
+  content: "";
+  border-bottom: 1px solid #767676;
+  display: block;
+}
+
+.other_account_login_button {
+  display: flex;
+  width: 472px;
+  height: 50px;
+  padding: 15px 12px;
+  background-color: #fff;
+  border: 1px solid #767676;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #767676;
+}
+.other_account_login_button::before {
+  content: "";
+  background-image: url(../img/Google__G__Logo\ 1.svg);
+  width: 28px;
+  height: 28px;
+}

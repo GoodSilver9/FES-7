@@ -53,3 +53,6 @@ let nickName;
 
 console.log(username ?? nickName ?? 'guest') // guest
 
+// 5번
+
+
