@@ -34,7 +34,7 @@ h1 {
   background-color: #fff;
   border: 1px solid #c4c4c4;
   border-radius: 10px;
-  height: 736px;
+  padding-bottom: 25px;
 }
 
 .header_title {
@@ -67,18 +67,20 @@ h1 {
   padding: 15px;
   border-radius: 5px;
 }
+.user_name {
+  border: 2px solid #f4492e;
+}
 
 .login_check_box {
   display: flex;
-  margin-top: 12px;
   gap: 8px;
 }
 .login_continue {
   width: 22px;
   height: 22px;
-  border-radius: 10px;
 }
 .login_box_title {
+  margin-bottom: 14px;
 }
 .login_button {
   padding: 14px 211px;
@@ -109,7 +111,6 @@ h1 {
   flex-direction: column;
   gap: 10px;
   align-items: center;
-  margin-top: 30px;
 }
 
 .other_login_text {
@@ -119,15 +120,30 @@ h1 {
   font-size: 14px;
   font-weight: 400;
   color: #767676;
+  margin: 20px 24px;
+}
+.other_login_text::before {
+  content: "";
+  border-bottom: 1px solid #767676;
+  display: block;
+  width: 210px;
+  margin-bottom: 7.5px;
+  margin-right: 13px;
 }
 
 .other_login_text::after {
   content: "";
   border-bottom: 1px solid #767676;
   display: block;
+  width: 210px;
+  margin-bottom: 7.5px;
+  margin-left: 13px;
 }
 
-.other_account_login_button {
+.other_account_login_button_1,
+.other_account_login_button_2,
+.other_account_login_button_3,
+.other_account_login_button_4 {
   display: flex;
   width: 472px;
   height: 50px;
@@ -136,14 +152,40 @@ h1 {
   border: 1px solid #767676;
   border-radius: 5px;
   align-items: center;
-  justify-content: center;
   font-size: 16px;
   font-weight: 500;
   color: #767676;
 }
-.other_account_login_button::before {
+.other_account_login_button_1::before {
   content: "";
   background-image: url(../img/Google__G__Logo\ 1.svg);
   width: 28px;
   height: 28px;
+  margin-right: 138px;
+}
+.other_account_login_button_2::before {
+  content: "";
+  background-image: url(../img/facebook.svg);
+  width: 28px;
+  height: 28px;
+  margin-right: 123px;
+}
+.other_account_login_button_3::before {
+  content: "";
+  background-image: url(../img/naver-logo.svg);
+  width: 28px;
+  height: 28px;
+  margin-right: 131px;
+}
+.other_account_login_button_4::before {
+  content: "";
+  background-image: url(../img/message-circle.svg);
+  width: 28px;
+  height: 28px;
+  margin-right: 123px;
+}
+
+.account_error {
+  color: #f4492e;
+  font-size: 14px;
 }
