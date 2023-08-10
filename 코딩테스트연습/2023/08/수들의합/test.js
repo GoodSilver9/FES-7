@@ -23,4 +23,4 @@ function solution(num) {
   console.log(answer);
   return answer;
 }
-solution(200);
+solution(12);
