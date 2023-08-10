@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        let num = []
+
+
+        while (num.length < 6) {
+            let lotto = Math.floor(Math.random() * 45 + 1)
+            if (num.indexOf(lotto) == -1) {
+                num.push(lotto)
+            }
+        }
+        num.sort((a, b) => {
+            return a - b
+        })
+        console.log(num)
+    </script>
+</body>
+
+</html>

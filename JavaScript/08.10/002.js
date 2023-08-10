@@ -1,0 +1,21 @@
+let num = 0;
+while (num < 11) {
+  document.write(num, "<br>");
+  num += 1;
+}
+
+do {
+  document.write(num, "!! <br>");
+  num += 1;
+} while (num < 11);
+
+let i = 2;
+let j = 1;
+while (i < 10) {
+  while (j < 10) {
+    document.write(`${i} X ${j} = ${i * j} <br>`);
+    j++;
+  }
+  j = 1;
+  i++;
+}
