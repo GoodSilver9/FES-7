@@ -23,7 +23,7 @@ function solution(unit, array, sum) {
     let count = 0;
     let plus =
       (array[array.length - 2] + array[array.length - 1] - (summit - sum)) / 2;
-    // 127 미만의 새로운 배열
+
     let newarr = array.map((item) => {
       if (item > plus) {
         return (item = Math.floor(plus));
