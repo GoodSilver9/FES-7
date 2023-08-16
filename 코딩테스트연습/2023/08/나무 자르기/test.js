@@ -1,9 +1,6 @@
-// let fs = require("fs");
-// let input = fs.readFileSync("/dev/stdin").toString().split("\n");
-
-// input = input.map(Number);
-
-// solution(input);
+let fs = require("fs");
+let input = fs.readFileSync("/dev/stdin").toString().split("\n");
+const result = solution(n, needs, arr1);
 
 function solution(unit, need, trees) {
   trees.sort((a, b) => {
@@ -29,6 +26,7 @@ function solution(unit, need, trees) {
   }
   return answer;
 }
+console.log(result);
 console.log(solution(4, 7, [20, 15, 10, 17]));
 
 // 4 는 나무의 개수 7은 필요한양

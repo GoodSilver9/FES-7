@@ -1,16 +1,20 @@
+let fs = require("fs");
+let input = fs.readFileSync("/dev/stdin").toString().split("\n");
+const result = solution(n, needs, arr1);
+
 function solution(n, needs, arr1) {
   const [n, needs] = input
     .shift()
     .split(" ")
     .map((a) => +a);
+
   let arr1 = input.map((a) => +a).sort();
   let max = Math.max(...arr1);
   let min = 1;
-  a;
 
   while (min <= max) {
     let mid = parseInt((max + min) / 2);
-    let pieces = rr1
+    let pieces = arr1
       .map((item) => {
         return parseInt(item / mid);
       })
@@ -25,9 +29,6 @@ function solution(n, needs, arr1) {
   return max;
 }
 
-let fs = require("fs");
-let input = fs.readFileSync("/dev/stdin").toString().split("\n");
-const result = solution(n, needs, arr1);
 console.log(result);
 
 // solution(4, 11, [802, 743, 457, 539]);

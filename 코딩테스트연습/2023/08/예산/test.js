@@ -1,9 +1,9 @@
-// let fs = require("fs");
-// let input = fs.readFileSync("/dev/stdin").toString().split("\n");
+let fs = require("fs");
+let input = fs.readFileSync("/dev/stdin").toString().split("\n");
 
-// input = input.map(Number);
+input = input.map(Number);
 
-// solution(input);
+solution(input);
 
 function solution(unit, array, sum) {
   // unit으로 index값을 이용해? 1부터 unit 까지의 index를 배열로 만드는걸로
