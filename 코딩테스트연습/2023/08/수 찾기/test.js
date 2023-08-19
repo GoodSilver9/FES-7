@@ -3,18 +3,16 @@ let input = fs.readFileSync("/dev/stdin").toString().split("\n");
 let arr1 = input[1].split(" ").map(Number);
 let arr2 = input[3].split(" ").map(Number);
 
-// let arr1Set = new Set(arr1);
-
 function solution(arr1, arr2) {
-  let closey = arr2.map((item) => {
-    if (arr1.has(item)) {
-      return 1;
-    } else {
-      return 0;
-    }
+  let closey = new Set(arr1);
+
+  let answer = arr2.map((item) => {
+    return closey.has(item) ? 1 : 0;
   });
-  closey.forEach((item) => {
-    console.log(item);
-  });
+  console.log(answer.join("\n"));
 }
+
 solution(arr1, arr2);
+// solution([4, 1, 5, 2, 3], [1, 3, 7, 9, 5]);
+
+// [4,1,5,2,3] , [1,3,7,9,5]
