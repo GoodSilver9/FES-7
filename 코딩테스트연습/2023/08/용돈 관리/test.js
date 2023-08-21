@@ -2,7 +2,7 @@
 // let input = fs.readFileSync("/dev/stdin").toString().split("\n");
 // let [n, m] = input[0].split(" ").map(Number);
 // let arr = [];
-// for (i = 1; i < n; i++) {
+// for (i = 1; i < n + 2; i++) {
 //   arr.push(i);
 // }
 
@@ -18,7 +18,7 @@ function solution(countLimit, arr) {
         remain -= arr[i];
       }
     }
-    return cnt++;
+    return cnt;
   };
 
   let left = Math.max(...arr);
