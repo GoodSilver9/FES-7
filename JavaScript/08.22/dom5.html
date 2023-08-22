@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="https://www.naver.com" class="link">네이버 링크입니다만..</a>
+
+    <h1>나의 todo list</h1>
+    <p>1. 오늘 저녁에는 부대찌게를 끓여 먹겠다.<button type="button">삭제</button></p>
+    <p>2. 후식으로 슈팅스타를 먹겠다.<button type="button">삭제</button></p>
+    <p>3. 자기 전에 반드시 내일 아침 메뉴를 생각해두겠다.<button type="button">삭제</button></p>
+
+    <script>
+        // const btn = document.querySelectorAll('button')
+
+        // btn.forEach((item) => {
+        //     item.addEventListener('click', function () {
+        //         const result = confirm('정말?')
+        //         const ptag = item.closest('p')
+        //         if (result) {
+        //             ptag.remove()
+        //         } else {
+        //             console.log("ㄴㄴ")
+        //         }
+
+        //     })
+        // })
+
+        // p태그를 선택하여 클릭 이벤트를 붙여줍니다.
+        const ps = document.querySelectorAll('p');
+        ps.forEach((item) => {
+            item.addEventListener('click', () => {
+                alert(item.firstChild.textContent)
+
+            })
+        })
+        // btn 태그를 선택하여 클릭 이벤트를 붙여줍니다.
+        const btns = document.querySelectorAll('button');
+        btns.forEach((item) => {
+            item.addEventListener('click', () => {
+                const result = confirm('삭제하시겠습니까?')
+                if (result) {
+                    // item.closest('p').remove();
+                    item.parentElement.remove();
+                }
+            })
+        })
+
+
+
+
+
+
+        const link = document.querySelector('.link');
+        link.addEventListener('click', (event) => {
+            console.log('clicked');
+            event.preventDefault();
+        })
+
+
+
+
+        link.addEventListener('contextmenu', (event) => {
+            alert('안돼')
+            event.preventDefault();
+
+
+        })
+
+        // const myForm = document.querySelector('form');
+        // myform.addEventListener('submit', () => {
+        //     console.log('submit!!')
+        // })
+    </script>
+</body>
+
+</html>
