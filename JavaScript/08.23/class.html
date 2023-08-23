@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        const sm = {
+            myName: "이승무",
+            address: "동남로9길",
+            phoneNum: "010-5100-5138"
+        }
+        class Robot {
+            constructor(name) {
+                this.myName = name.myName;
+            }
+
+            sayYourName() {
+                console.log(`제 이름은 ${this.myName} 입니다 삐리리`)
+            }
+        }
+        const newman = new Robot(sm)
+        console.log(newman)
+        console.log(newman.sayYourName())
+
+
+
+        class ME {
+            constructor(myAdress) {
+                this.name = "재현";
+                this.address = myAdress;
+                this.phoneNum = '010-5100-5138'
+            }
+
+            canWalk() {
+                console.log("걷는다")
+            }
+            teaching(student) {
+                student.levelUp()
+            }
+        }
+    </script>
+</body>
+
+</html>

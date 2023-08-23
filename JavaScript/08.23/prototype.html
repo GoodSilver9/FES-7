@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        function RobotFactory(foodNames) {
+            // Math.random() ==> 배열의 인덱스
+            this.menu = foodNames
+            let idx = parseInt(Math.random() * this.menu.length)
+            console.log(foodNames[idx]);
+        }
+
+        const robot = new RobotFactory(['청국장', '물냉면', '동배고기'])
+        console.log(robot.prototype)
+        console.log(robot.__proto__ === robot.prototype);
+
+
+
+
+        const me = {
+            name: '이승무',
+            address: '동남로 9길 ',
+            phoneNum: '010-8000-0000',
+            canWalk: function () {
+                console.log('재현이가 걷는다.');
+            },
+            teaching: function (student) {
+                student.levelUp();
+            }
+        }
+
+        const lion = {
+            level: 1,
+            levelUp: function () {
+                this.level++;
+            }
+        }
+
+        function Me() {
+            this.address = '동남로 6길';
+            this.phoneNum = '010-5000-5138';
+        }
+
+        Me.prototype.name = "김창영"
+
+        Me.prototype.canWalk = function () {
+            console.log('승무가 걷는다.')
+
+        }
+        Me.prototype.teaching = function (student) {
+            student.levelUp();
+        }
+
+        function Lion() {
+            this.level = 1;
+        }
+
+        Lion.prototype.levelUp = function () {
+            this.level++;
+        }
+    </script>
+</body>
+
+</html>

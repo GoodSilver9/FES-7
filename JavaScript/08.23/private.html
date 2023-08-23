@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        class Robot {
+            #password
+            constructor(name, info) {
+
+                this.myName = name;
+                this.#password = info
+            }
+
+            sayYouName() {
+                console.log(`제 이름은 ${this.myName} 입니다 삐리비리리비리`);
+            }
+
+        }
+        class Robot2 {
+            #password
+            constructor(name, pw) {
+
+                this.myName = name;
+                this.#password = pw
+            }
+
+
+            sayYouName() {
+                console.log(`제 이름은 ${this.myName} 입니다 삐리비리리비리`);
+            }
+            get password() {
+                return this.#password
+            }
+            set password(pw) {
+                this.#password = pw;
+            }
+
+        }
+
+        const robot = new Robot('재현', 123123123);
+        const robot2 = new Robot2('재현', 12300)
+        console.log(robot2.password)
+        robot2.password = 456456;
+        console.log(robot2.password)
+
+
+
+
+        // console.log(robot.#important);
+        // robot.#important = 00000000;
+
+
+        // private 프로퍼티 접근,수정
+    </script>
+</body>
+
+</html>
