@@ -1,0 +1,30 @@
+// input: box(1)
+// output: box(2)
+
+@mixin circle($size, $align) {
+  width: #{$size}px;
+  height: #{$size}px;
+  border: 1px solid black;
+
+  @if ($align == "c") {
+    border: 1px solid black;
+    border-radius: 50%;
+  }
+}
+
+.one {
+  @include circle(100, r);
+}
+.two {
+  @include circle(100, c);
+}
+
+//input:box(100, c) // c는 원, circle입니다.
+// output:
+.one {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border: 1px solid black;
+  border-radius: 50%;
+}

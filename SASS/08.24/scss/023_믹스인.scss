@@ -1,0 +1,11 @@
+// 지역 믹스인
+
+.card {
+  @mixin box {
+    width: 100px;
+    height: 100px;
+  }
+
+  @include box;
+  background-color: blue;
+}
